@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Chrome",
+            "_url": "file:///E:/git/kurs-js/01%20Hello%20World/index.html",
+            "url": "file:///E:/git/kurs-js/02%20Zmiennei%20Typy/index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
