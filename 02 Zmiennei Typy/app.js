@@ -53,10 +53,28 @@ console.log(2 - 1);
 console.log(2 * 2);
 console.log(8 / 2);
 console.log(8 % 3);
-console.log(Math.pow(2, 3));
+console.log('pow', Math.pow(2, 3));
+console.log('**', 2 ** 3);
 console.log(Math.abs(2 - 3));
 console.log(Math.sqrt(36));
 console.log(Math.floor(Math.random() * 10));
+
+// inkrementacja/dekrementacja
+
+let i1 = 0;
+console.log('i1', ++i1);
+console.log('i1', ++i1);
+console.log('i1', ++i1);
+
+let i2 = 0;
+console.log('i2', i2++);
+console.log('i2', i2++);
+console.log('i2', i2++);
+
+let i3 = 10;
+console.log('i3', i3--);
+console.log('i3', --i3);
+console.log('i3', i3--);
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -177,6 +195,43 @@ console.log(2 * '0x12');
 console.log(2 * 'Ala');
 console.log('Ala' - 1);
 
+// Date
+
+const past = new Date('2019-01-02 13:33:21');
+const now = new Date();
+console.dir(now);
+console.log(now);
+const day = now.getDay();
+
+let weekDay = 'nie wiem';
+if (day === 0) {
+  weekDay = 'niedziela';
+} else if (day === 1) {
+  weekDay = 'poniedziałek';
+} else if (day === 2) {
+  weekDay = 'wtorek';
+} else if (day === 3) {
+  weekDay = 'środa';
+} else if (day === 4) {
+  weekDay = 'czwartek';
+} else if (day === 5) {
+  weekDay = 'piątek';
+} else {
+  weekDay = 'sobota';
+}
+
+console.log(`Dziś jest ${weekDay} ${now.getFullYear()}-${now.getMonth()+1}-${now.getDate()}`);
+
+console.log('timestamp', (new Date()).getTime()/1000);
+console.log('timestamp', new Date(0));
+
+const startAt = (new Date()).getTime();
+
+alert('Kliknij OK');
+
+alert(`Zajęło ci to ${((new Date()).getTime() - startAt) / 1000} sekund`)
+
+
 // Bonus
 
 console.log(
@@ -205,5 +260,14 @@ console.log("\u{1F691}"); //🚑
 console.log("\u{1F4A9}"); //💩
 console.log('👩‍❤️‍👩', '👩‍❤️‍👩'.length);
 
+// ćwiczenia
+// Napisz kod który zapyta cię o liczbę i procent. W wyniku poda jaka liczba stanowi procent tej liczby.
+
 // Zadanie domowe
-// Napisz koda który zapyta cie o liczbę i procent. W wyniku poda jaka liczba stanowi procent tej liczby.
+// Wariacje na temat liczby
+// Napisz program który zapyta o liczbę a w odpowiedzi poda kilka (np 5) ciekawostek na jej temat. Np.
+// Jedna niech będzie warunkowa. Postaraj się obsłużyć przypadki skraje np gdy ktoś liczby nie poda.
+// Dla liczby 5:
+//   Jeżeli promień pizzy będzie miał 5 cm to jej powierzchnia będzie liczyć 49.29 cm^2
+//   Jeżeli drabina będzie miał 5 m to aby dosięgnąć księżyca będzie trzeba ich potrzeba 76880000 aby go dosięgnąć
+//
