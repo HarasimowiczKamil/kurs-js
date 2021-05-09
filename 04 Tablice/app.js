@@ -222,7 +222,7 @@ do {
   k++;
 } while (k < names.length);
 
-// Zadanie domowe
+// Zadanie domowe 1
 // Posortuj tablice zgodnie z polskim alfabetem
 
 // Zadanie domowe 2
